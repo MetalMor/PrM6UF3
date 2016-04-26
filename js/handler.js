@@ -3,21 +3,17 @@
  */
 
 /**
- * Controlador de las funciones de la sopa de letras: aquí es donde se usa el jQuery :D
- * Funcionalidades implementadas:
- *      - TABLA DINÁMICA mega guay de la muerte. Rellena la tabla con letras aleatorias de forma automática
- * TODO:
- *      - Situar un array de palabras en la sopa de letras.
- *      - Tabla simulada en un array multidimensional.
+ * Controlador de las funciones de la sopa de letras: aquí es donde se usa el jQuery
  */
 function DOMhandler() {
 
     // Ruta de la imagen
-    this.image = "img/image.png";
+    this.image = new Image();
+    this.image.src = "img/image.png";
 
     // Carga la imagen
     this.putImage = function() {
-        $('img').attr('src', this.image);
+        $('img').attr('src', this.image.src);
     };
     // Rellena una tabla seleccionada por parámetro con el contenido especificado
     this.fillTable = function(content) { // content es un array

@@ -1,7 +1,19 @@
 /**
  * Created by becari on 07/04/2016.
  */
+/**
+ * MAIN se ejecuta cuando el DOM está cargado.
+ */
 function DocumentReady() {
+    var fade = $("#fade");
+    fade.css('background-color', 'cyan');
+    fade.css('height', '40px');
+    fade.css('width', '40px');
+    fade.css('text-align', 'center');
+    fade.css('display', 'none');
+    var table = $("table");
+    table.css('float', 'right');
+    table.css('margin', '200px');
     var handler = new DOMhandler();
     words = new Words();
     utils = new Util();

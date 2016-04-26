@@ -1,5 +1,7 @@
 /**
- * Created by becari on 07/04/2016.
+ * Guarda la lista de palabras del programa
+ *
+ * Created by mor on 07/04/2016.
  */
 function Words() {
     this.wordList = [];
